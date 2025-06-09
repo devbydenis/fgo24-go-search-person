@@ -1,7 +1,7 @@
 package main
 
 import (
-	"fmt"
+	"search-person/utils"
 )
 
 func main() {
@@ -18,16 +18,5 @@ func main() {
 		"Clementina DuBuque",
 	}
 	
-	searchPerson(users, "Ervin Howell")
-}
-
-func searchPerson(users []string, query string) {
-	for _, user := range users {
-		if (user == query) {
-			fmt.Println("Found:", user)
-		} else {
-			fmt.Println("Not found:", []string{})
-			break
-		}
-	}
+	utils.SearchPerson(users, "Ervin")
 }
